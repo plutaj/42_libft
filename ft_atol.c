@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_atol.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jpluta <jpluta@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/19 16:42:14 by jpluta            #+#    #+#             */
-/*   Updated: 2024/10/20 15:48:58 by jpluta           ###   ########.fr       */
+/*   Created: 2024/05/25 19:34:47 by jpluta            #+#    #+#             */
+/*   Updated: 2024/10/19 16:41:42 by jpluta           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 static int	find_int(const char *pstr, int i);
 
-int	ft_atoi(const char *str) // char to int convertor
+long long	ft_atol(const char *str) // char to int convertor
 {
 	int			i;
 	int			sign;
-	int			num;
+	long long	num;
 	const char	*pstr;
 
 	i = 0;
